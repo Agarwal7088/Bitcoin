@@ -1,3 +1,4 @@
+import 'package:bitcoin/recieve.dart';
 import 'package:bitcoin/send.dart';
 import 'package:flutter/material.dart';
 
@@ -91,22 +92,33 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             }
                           },
                         ),
-                        Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("images/2.png"),
-                                radius: 37,
+                        InkWell(
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: CircleAvatar(
+                                  backgroundImage: AssetImage("images/2.png"),
+                                  radius: 37,
+                                ),
                               ),
-                            ),
-                            Text(
-                              "Recieve",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            )
-                          ],
+                              Text(
+                                "Recieve",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                          onTap: () {
+                            {
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Myrecievescreen()),
+                              );
+                            }
+                          },
                         ),
                         Column(
                           children: [

@@ -126,21 +126,21 @@ class _mysendscreenState extends State<mysendscreen> {
                 height: 60,
                 width: 370,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  // Add the action you want to perform when the button is pressed
-                  // For example, you can navigate to the next screen here.
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Home()),
-                  );
-                },
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                      Colors.tealAccent), // Set button background color to red
-                ),
-                child: Text('Send'), // Button text
-              ),
+              // ElevatedButton(
+              //   onPressed: () {
+              //     // Add the action you want to perform when the button is pressed
+              //     // For example, you can navigate to the next screen here.
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => Home()),
+              //     );
+              //   },
+              //   style: ButtonStyle(
+              //     backgroundColor: MaterialStateProperty.all(
+              //         Colors.tealAccent), // Set button background color to red
+              //   ),
+              //   child: Text('Send'), // Button text
+              // ),
             ],
           ),
         ),
